@@ -36,9 +36,9 @@ class DataTypes
 	public static function data_post_type(){
         $data = array(
             'labels'             => array(
-                'name'               => _x( 'usaa', 'post type general name' ),
+                'name'               => _x( 'USAA', 'post type general name' ),
                 'singular_name'      => _x( 'usaa', 'post type singular name' ),
-                'menu_name'          => _x( 'usaa', 'admin menu' ),
+                'menu_name'          => _x( 'USAA', 'admin menu' ),
                 'name_admin_bar'     => _x( 'usaa', 'add new on admin bar' ),
                 'add_new'            => _x( 'Add New', 'usaa' ),
                 'add_new_item'       => __( 'Add New usaa' ),
@@ -93,8 +93,10 @@ class DataTypes
      *
      * Used by action hook: 'init'
      */
+
 	public static function taxonomies_for_pages(){	     
 		  register_taxonomy_for_object_type( 'category', 'page' );
 	} 
+
 
 }

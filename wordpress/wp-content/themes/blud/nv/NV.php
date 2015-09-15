@@ -108,6 +108,7 @@ class NV {
         /** CUSTOM *********************************************************************/
         require_once( NV_CUSTOM . '/WalkerComments.php' ); // Custom classes
         require_once( NV_CUSTOM . '/DataTypes.php' ); // Registers Post Types & Taxonomies
+        require_once( NV_CUSTOM . '/Endpoints.php' ); // Registers Endpoints for JSON 
 
     }
 
@@ -145,6 +146,12 @@ class NV {
 
         // Load any javascript needed for live preview updates
         add_action( 'customize_preview_init',   array( '\NV\Hooks\ThemeCustomize', 'live_preview' ) );
+        
+        /** CUSTOM ********************************************************************/
+        
+        
+		// Registers the Data post type and associated taxonomies
+		add_action( 'init', array( '\NV\Custom\DataTypes', 'register' ));
 
 
         /** INTEGRATE THEME WITH TINYMCE EDITOR **************************************/
