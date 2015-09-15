@@ -1,0 +1,23 @@
+/*
+Theme Name: blud
+Author: philip rudy
+*/
+
+
+/*
+===================================
+READ ME!!!
+===================================
+This is a required file for all WordPress themes, so you can't just delete it.
+
+USE OLD FASIONED CSS:
+If you don't want to use SASS (or don't know what SASS is) - then you can go ahead
+and just work in good, old-fashioned CSS within this very file.
+
+TO USE SASS/COMPASS:
+The _compass folder is a pre-configured Zurb Foundation Compass project.
+
+Keep in mind that if you DO want to use SASS/Compass, you will still need to install 
+the gems for Compass *and* the Zurb Foundation framework (even if you want to use 
+a compiler like CodeKit). More info here: http://foundation.zurb.com/docs/gem-install.php
+*/
